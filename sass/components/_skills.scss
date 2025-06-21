@@ -1,0 +1,49 @@
+@use "../abstracts/index" as *;
+
+.skills {
+  padding: 40px;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  margin-top: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $primary-font;
+
+  @include breakpoint(tablet) {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / repeat(2, 1fr);
+    gap: 50px;
+    padding: 50px 0px;
+  }
+
+  @include breakpoint(desktop) {
+    margin-top: 250px;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+  }
+
+  &_box {
+    text-align: center;
+
+    @include breakpoint(tablet) {
+      text-align: left;
+    }
+
+    &_title {
+      @include title(s);
+
+      @include breakpoint(tablet) {
+        @include title(l);
+      }
+    }
+
+    &_subtitle {
+      @include text(s);
+      color: $grey;
+
+      @include breakpoint(tablet) {
+        @include text(m);
+      }
+    }
+  }
+}

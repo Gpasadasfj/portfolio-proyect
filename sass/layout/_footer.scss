@@ -1,0 +1,27 @@
+@use "../abstracts/index" as *;
+
+footer {
+  padding: 16px;
+  background-color: $dark-grey;
+  @include breakpoint(desktop) {
+    padding: 0 165px;
+  }
+}
+
+.footer {
+  border-top: 1px solid $white;
+  padding-bottom: 60px;
+  background-color: $dark-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+
+  @include breakpoint(tablet) {
+    padding-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page">
+        <header class="main-header">
+          <img
+            src="./img/logo.png"
+            alt="Logotipo de Adam Keyes"
+            class="main-header_logo"
+          />
+          <nav class="main-header_social social-nav">
+            <a class="social-nav_link" href="#">
+              <svg
+                class="social-nav_link_svg"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0,0,256,256"
+                color="currentColor"
+              >
+                <g transform="scale(10.66667,10.66667)">
+                  <path
+                    d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.6,5 2.5,9.3 6.9,10.7v-2.3c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v3.3c4.1,-1.3 7,-5.1 7,-9.5c0,-6 -5.1,-10.7 -11.1,-10z"
+                  ></path>
+                </g>
+              </svg>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M55.2673 1.78427C55.1101 1.78729 54.9603 1.85187 54.8502 1.96414C54.74 2.07642 54.6784 2.22742 54.6784 2.38469V13.7974C54.6784 13.9567 54.7416 14.1094 54.8542 14.222C54.9668 14.3346 55.1196 14.3978 55.2788 14.3978C55.438 14.3978 55.5908 14.3346 55.7034 14.222C55.816 14.1094 55.8792 13.9567 55.8792 13.7974V2.38469C55.8793 2.30494 55.8633 2.22598 55.8325 2.15244C55.8017 2.07888 55.7565 2.01221 55.6996 1.95632C55.6427 1.90042 55.5752 1.85642 55.5012 1.82688C55.4271 1.79735 55.3479 1.78286 55.2681 1.78427H55.2673ZM64.3523 5.20302C64.2738 5.20528 64.1966 5.22283 64.125 5.2547L58.9723 7.55463C58.8669 7.60226 58.7775 7.67928 58.7147 7.77647C58.652 7.87365 58.6186 7.98688 58.6186 8.10255C58.6186 8.21822 58.652 8.33144 58.7147 8.42863C58.7775 8.52582 58.8669 8.60284 58.9723 8.65047L64.125 10.9578C64.2025 10.9926 64.2862 11.0108 64.3711 11.0111C64.5084 11.0107 64.6413 10.9632 64.7478 10.8766C64.8544 10.79 64.9281 10.6696 64.9565 10.5353C64.9851 10.401 64.9667 10.261 64.9044 10.1386C64.8422 10.0163 64.74 9.9189 64.6147 9.86277L60.6891 8.10337L64.6147 6.35053C64.7597 6.28527 64.8728 6.16533 64.9297 6.0169C64.9866 5.86846 64.9825 5.70357 64.9182 5.55818C64.8695 5.4497 64.7898 5.35808 64.689 5.29488C64.5883 5.23167 64.4711 5.1997 64.3523 5.20302ZM45.6291 9.38812C45.7127 9.3485 45.8044 9.32876 45.8969 9.33044V9.33126C46.0278 9.33381 46.1542 9.37902 46.2569 9.46001C46.3597 9.541 46.4331 9.65333 46.4662 9.77993C47.0946 12.1872 48.5038 14.318 50.4731 15.8385C52.4423 17.359 54.8603 18.1834 57.3482 18.1824C57.5075 18.1824 57.6602 18.2457 57.7728 18.3583C57.8854 18.4709 57.9486 18.6236 57.9486 18.7828C57.9486 18.9421 57.8854 19.0948 57.7728 19.2074C57.6602 19.32 57.5075 19.3832 57.3482 19.3832C51.6821 19.3832 46.7287 15.5577 45.3047 10.081C45.2816 9.99134 45.2795 9.89757 45.2985 9.807C45.3176 9.71643 45.3574 9.63149 45.4147 9.55882C45.472 9.48616 45.5454 9.42774 45.6291 9.38812Z"
+              />
+            </a>
+            <a class="social-nav_link" href="#">
+              <svg
+                class="social-nav_link_svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="currentColor"
+              >
+                <path
+                  d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"
+                />
+              </svg>
+            </a>
+            <a class="social-nav_link" href="#">
+              <svg
+                class="social-nav_link_svg"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0 0 30 30"
+                fill="currentColor"
+              >
+                <path
+                  d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"
+                ></path>
+              </svg>
+            </a>
+            <a class="social-nav_link" href="#"
+              ><svg
+                class="social-nav_link_svg"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0 0 50 50"
+                fill="currentColor"
+              >
+                <path
+                  d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"
+                ></path>
+              </svg>
+            </a>
+          </nav>
+        </header>
+
+        <main>
+          <section class="hero">
+            <img src="./img/hero-img.png" alt="" class="hero_img" />
+            <div class="hero_content">
+              <h1 class="hero_content_title">
+                <span class="hero_content_title_span">Nice to</span> meet you!
+                I'm
+                <span class="hero_content_title_underline">Adam Keyes</span>
+              </h1>
+              <p class="hero_content_subtitle">
+                Based in the UK, I’m a front-end developer passionate about
+                building accessible web apps that users love.
+              </p>
+              <div class="hero_content_box">
+                <a href="#" class="hero_box_button button">CONTACT ME</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="skills">
+            <div class="skills_box">
+              <h3 class="skills_box_title">HTML</h3>
+              <p class="skills_box_subtitle">4 Years Experience</p>
+            </div>
+
+            <div class="skills_box">
+              <h3 class="skills_box_title">CSS</h3>
+              <p class="skills_box_subtitle">4 Years Experience</p>
+            </div>
+
+            <div class="skills_box">
+              <h3 class="skills_box_title">Javascript</h3>
+              <p class="skills_box_subtitle">4 Years Experience</p>
+            </div>
+
+            <div class="skills_box">
+              <h3 class="skills_box_title">Accesibility</h3>
+              <p class="skills_box_subtitle">4 Years Experience</p>
+            </div>
+
+            <div class="skills_box">
+              <h3 class="skills_box_title">React</h3>
+              <p class="skills_box_subtitle">3 Years Experience</p>
+            </div>
+
+            <div class="skills_box">
+              <h3 class="skills_box_title">Sass</h3>
+              <p class="skills_box_subtitle">3 Years Experience</p>
+            </div>
+          </section>
+
+          <section class="proyects">
+            <header class="proyects_header">
+              <h2 class="proyects_header_title">Proyects</h2>
+              <a href="#" class="proyects_header_button button">CONTACT ME </a>
+            </header>
+
+            <div class="proyects_container">
+              <article class="proyects_item">
+                <div class="proyects_item_img-box">
+                  <img
+                    src="./img/design-portfolio.png"
+                    alt=""
+                    class="proyects_item_img-box_img"
+                  />
+                </div>
+                <div class="proyects_item_skills-box">
+                  <h4 class="proyects_item_skills-box_title">
+                    DESIGN PORTFOLIO
+                  </h4>
+                  <h5 class="proyects_item_skills-box_skills">
+                    <span>HTML</span><span>CSS </span>
+                  </h5>
+                </div>
+                <div class="proyects_item_buttons">
+                  <a href="#" class="proyects_item_button1 button"
+                    >View Proyect</a
+                  >
+                  <a href="#" class="proyects_item_button2 button">View Code</a>
+                </div>
+              </article>
+
+              <article class="proyects_item">
+                <div class="proyects_item_img-box">
+                  <img
+                    src="./img/e-learning-landing-page.png"
+                    alt=""
+                    class="proyects_item_img-box_img"
+                  />
+                </div>
+                <div class="proyects_item_skills-box">
+                  <h4 class="div proyects_item_skills-box_title">
+                    E-LEARNING LANDING PAGE
+                  </h4>
+                  <h5 class="proyects_item_skills-box_skills">
+                    <span>HTML</span><span>CSS </span>
+                  </h5>
+                </div>
+                <div class="proyects_item_buttons">
+                  <a href="#" class="proyects_item_button1 button"
+                    >View Proyect</a
+                  >
+                  <a href="#" class="proyects_item_button2 button">View Code</a>
+                </div>
+              </article>
+
+              <article class="proyects_item">
+                <div class="proyects_item_img-box">
+                  <img
+                    src="./img/todo-web-app.png"
+                    alt=""
+                    class="proyects_item_img-box_img"
+                  />
+                </div>
+                <div class="proyects_item_skills-box">
+                  <h4 class="proyects_item_skills-box_title">TODO WEB APP</h4>
+                  <h5 class="proyects_item_skills-box_skills">
+                    <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                  </h5>
+                </div>
+                <div class="proyects_item_buttons">
+                  <a href="#" class="proyects_item_button1 button"
+                    >View Proyect</a
+                  >
+                  <a href="#" class="proyects_item_button2 button">View Code</a>
+                </div>
+              </article>
+
+              <article class="proyects_item">
+                <div class="proyects_item_img-box">
+                  <img
+                    src="./img/entertainment-web-app.png"
+                    alt=""
+                    class="proyects_item_img-box_img"
+                  />
+                </div>
+                <div class="proyects_item_skills-box">
+                  <h4 class="proyects_item_skills-box_title">
+                    ENTERTAINMENT WEB APP
+                  </h4>
+                  <h5 class="proyects_item_skills-box_skills">
+                    <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                  </h5>
+                </div>
+                <div class="proyects_item_buttons">
+                  <a href="#" class="proyects_item_button1 button"
+                    >View Proyect</a
+                  >
+                  <a href="#" class="proyects_item_button2 button">View Code</a>
+                </div>
+              </article>
+
+              <article class="proyects_item">
+                <div class="proyects_item_img-box">
+                  <img
+                    src="./img/memory-game.png"
+                    alt=""
+                    class="proyects_item_img-box_img"
+                  />
+                </div>
+                <div class="proyects_item_skills-box">
+                  <h4 class="proyects_item_skills-box_title">MEMORY GAME</h4>
+                  <h5 class="proyects_item_skills-box_skills">
+                    <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                  </h5>
+                </div>
+                <div class="proyects_item_buttons">
+                  <a href="#" class="proyects_item_button1 button"
+                    >View Proyect</a
+                  >
+                  <a href="#" class="proyects_item_button2 button">View Code</a>
+                </div>
+              </article>
+
+              <article class="proyects_item">
+                <div class="proyects_item_img-box">
+                  <img
+                    src="./img/art-gallery-showcase.png"
+                    alt=""
+                    class="proyects_item_img-box_img"
+                  />
+                </div>
+                <div class="proyects_item_skills-box">
+                  <h4 class="proyects_item_skills-box_title">
+                    ART GALLERY SHOWCASE
+                  </h4>
+                  <h5 class="proyects_item_skills-box_skills">
+                    <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                  </h5>
+                </div>
+                <div class="proyects_item_buttons">
+                  <a href="#" class="proyects_item_button1 button"
+                    >View Proyect</a
+                  >
+                  <a href="#" class="proyects_item_button2 button">View Code</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div class="contact_page">
+      <aside>
+        <section class="contact">
+          <div class="contact_container">
+            <h2 class="contact_title">Contact</h2>
+            <p class="contact_subtitle">
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
+            </p>
+          </div>
+          <div class="contact_container">
+            <form
+              action="#"
+              class="contact_form"
+              name="contact"
+              method="get"
+              autocomplete="off"
+            >
+              <input
+                class="contact_form_input"
+                type="text"
+                name="name"
+                placeholder="    NAME"
+                autocomplete="off"
+                required
+              />
+              <input
+                class="contact_form_input email"
+                type="email"
+                name="email"
+                placeholder="    EMAIL"
+                required
+              />
+              <span class="contact_form_icon">!</span>
+              <div class="contact_form_error-message">
+                Sorry, invalid format here
+              </div>
+              <textarea
+                class="contact_form_input text_area"
+                name="message"
+                placeholder="    MESSAGE"
+                required
+              ></textarea>
+              <div class="contact_form_box">
+                <button class="contact_form_box_button button" type="submit">
+                  SEND MESSAGE
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <img src="./img/logo.png" alt="" class="footer-img" />
+        <nav class="footer_social social-nav">
+          <a class="social-nav_link" href="#">
+            <svg
+              class="social-nav_link_svg"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              viewBox="0,0,256,256"
+              color="currentColor"
+            >
+              <g transform="scale(10.66667,10.66667)">
+                <path
+                  d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.6,5 2.5,9.3 6.9,10.7v-2.3c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v3.3c4.1,-1.3 7,-5.1 7,-9.5c0,-6 -5.1,-10.7 -11.1,-10z"
+                ></path>
+              </g>
+            </svg>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M55.2673 1.78427C55.1101 1.78729 54.9603 1.85187 54.8502 1.96414C54.74 2.07642 54.6784 2.22742 54.6784 2.38469V13.7974C54.6784 13.9567 54.7416 14.1094 54.8542 14.222C54.9668 14.3346 55.1196 14.3978 55.2788 14.3978C55.438 14.3978 55.5908 14.3346 55.7034 14.222C55.816 14.1094 55.8792 13.9567 55.8792 13.7974V2.38469C55.8793 2.30494 55.8633 2.22598 55.8325 2.15244C55.8017 2.07888 55.7565 2.01221 55.6996 1.95632C55.6427 1.90042 55.5752 1.85642 55.5012 1.82688C55.4271 1.79735 55.3479 1.78286 55.2681 1.78427H55.2673ZM64.3523 5.20302C64.2738 5.20528 64.1966 5.22283 64.125 5.2547L58.9723 7.55463C58.8669 7.60226 58.7775 7.67928 58.7147 7.77647C58.652 7.87365 58.6186 7.98688 58.6186 8.10255C58.6186 8.21822 58.652 8.33144 58.7147 8.42863C58.7775 8.52582 58.8669 8.60284 58.9723 8.65047L64.125 10.9578C64.2025 10.9926 64.2862 11.0108 64.3711 11.0111C64.5084 11.0107 64.6413 10.9632 64.7478 10.8766C64.8544 10.79 64.9281 10.6696 64.9565 10.5353C64.9851 10.401 64.9667 10.261 64.9044 10.1386C64.8422 10.0163 64.74 9.9189 64.6147 9.86277L60.6891 8.10337L64.6147 6.35053C64.7597 6.28527 64.8728 6.16533 64.9297 6.0169C64.9866 5.86846 64.9825 5.70357 64.9182 5.55818C64.8695 5.4497 64.7898 5.35808 64.689 5.29488C64.5883 5.23167 64.4711 5.1997 64.3523 5.20302ZM45.6291 9.38812C45.7127 9.3485 45.8044 9.32876 45.8969 9.33044V9.33126C46.0278 9.33381 46.1542 9.37902 46.2569 9.46001C46.3597 9.541 46.4331 9.65333 46.4662 9.77993C47.0946 12.1872 48.5038 14.318 50.4731 15.8385C52.4423 17.359 54.8603 18.1834 57.3482 18.1824C57.5075 18.1824 57.6602 18.2457 57.7728 18.3583C57.8854 18.4709 57.9486 18.6236 57.9486 18.7828C57.9486 18.9421 57.8854 19.0948 57.7728 19.2074C57.6602 19.32 57.5075 19.3832 57.3482 19.3832C51.6821 19.3832 46.7287 15.5577 45.3047 10.081C45.2816 9.99134 45.2795 9.89757 45.2985 9.807C45.3176 9.71643 45.3574 9.63149 45.4147 9.55882C45.472 9.48616 45.5454 9.42774 45.6291 9.38812Z"
+            />
+          </a>
+          <a class="social-nav_link" href="#">
+            <svg
+              class="social-nav_link_svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              fill="currentColor"
+            >
+              <path
+                d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"
+              />
+            </svg>
+          </a>
+          <a class="social-nav_link" href="#">
+            <svg
+              class="social-nav_link_svg"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              viewBox="0 0 30 30"
+              fill="currentColor"
+            >
+              <path
+                d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"
+              ></path>
+            </svg>
+          </a>
+          <a class="social-nav_link" href="#"
+            ><svg
+              class="social-nav_link_svg"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              viewBox="0 0 50 50"
+              fill="currentColor"
+            >
+              <path
+                d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"
+              ></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

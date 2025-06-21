@@ -1,0 +1,102 @@
+@use "../abstracts/index" as *;
+
+.proyects {
+  margin-top: 80px;
+
+  @include breakpoint(tablet) {
+    padding-bottom: 80px;
+  }
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
+    &_title {
+      @include title(m);
+      @include breakpoint(tablet) {
+        @include title(xl);
+      }
+
+      @include breakpoint(desktop) {
+        @include title(xxl);
+      }
+    }
+  }
+
+  &_container {
+    @include breakpoint(tablet) {
+      display: grid;
+      grid-template: repeat(3, 1fr) / 1fr 1fr;
+      gap: 20px;
+    }
+  }
+
+  &_item {
+    margin-top: 52px;
+
+    @include breakpoint(desktop) {
+      margin-top: 90px;
+      position: relative;
+    }
+
+    &_img-box {
+      @include breakpoint(desktop) {
+        &_img {
+          height: 400px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          pointer-events: none;
+          height: 400px;
+        }
+      }
+    }
+
+    &_skills-box {
+      &_title {
+        @include title(xs);
+        margin-top: 20px;
+      }
+
+      &_skills {
+        @include text(m);
+        display: flex;
+        gap: 18px;
+        color: $grey;
+        margin-top: 7px;
+      }
+    }
+
+    &_buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 32px;
+      text-transform: uppercase;
+
+      @include breakpoint(desktop) {
+        flex-direction: column;
+        position: absolute;
+        top: 21%;
+        right: 37%;
+        gap: 60px;
+        display: none;
+      }
+    }
+  }
+}
+
+.proyects_item:hover .proyects_item_img-box::after {
+  opacity: 1;
+}
+
+.proyects_item:hover .proyects_item_buttons {
+  display: flex;
+}

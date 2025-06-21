@@ -1,0 +1,124 @@
+@use "../abstracts/index" as *;
+
+.hero {
+  text-align: center;
+
+  @include breakpoint(tablet) {
+    display: flex;
+    text-align: left;
+  }
+
+  &_img {
+    display: flex;
+    max-width: 174px;
+    margin: 0 auto;
+    margin-top: -120px;
+
+    @include breakpoint(tablet) {
+      max-width: 322px;
+      margin: 0;
+      order: 2;
+      position: absolute;
+      top: -157px;
+      left: 446px;
+      z-index: -1;
+    }
+
+    @include breakpoint(desktop) {
+      max-width: none;
+      width: 445px;
+      top: -253px;
+      left: 869px;
+    }
+  }
+
+  &_content {
+    @include breakpoint(tablet) {
+      order: 1;
+      width: 443px;
+      z-index: 1;
+      margin-top: 20px;
+    }
+
+    @include breakpoint(desktop) {
+      width: 706px;
+    }
+
+    &_title {
+      margin-top: 40px;
+      @include title(m);
+
+      @include breakpoint(tablet) {
+        order: 1;
+        @include title(xl);
+
+        &_span {
+          @include breakpoint(tablet) {
+            display: block;
+          }
+
+          @include breakpoint(desktop) {
+            display: inline;
+          }
+        }
+
+        @include breakpoint(desktop) {
+          @include title(xxl);
+        }
+        &_underline {
+          position: relative;
+
+          &::before {
+            position: absolute;
+            top: 50px;
+            content: "";
+            width: 100%;
+            height: 4px;
+            background-color: $green;
+            z-index: 3;
+
+            @include breakpoint(tablet) {
+              top: 88px;
+            }
+
+            @include breakpoint(desktop) {
+              top: 110px;
+            }
+          }
+        }
+      }
+    }
+
+    &_subtitle {
+      margin-top: 24px;
+      text-align: center;
+      @include text(s);
+
+      @include breakpoint(tablet) {
+        margin-top: 66px;
+        text-align: left;
+        @include text(m);
+      }
+
+      @include breakpoint(desktop) {
+        max-width: 445px;
+        margin-top: 43px;
+      }
+    }
+
+    &_box {
+      display: flex;
+      justify-content: center;
+      margin-top: 24px;
+
+      @include breakpoint(tablet) {
+        justify-content: flex-start;
+        margin-top: 34px;
+      }
+
+      @include breakpoint(desktop) {
+        margin-top: 66px;
+      }
+    }
+  }
+}

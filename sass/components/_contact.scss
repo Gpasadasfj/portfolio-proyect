@@ -1,0 +1,141 @@
+@use "../abstracts/index" as *;
+
+.contact {
+  font-family: $primary-font;
+  padding-bottom: 100px;
+  max-width: 375px;
+  margin: auto;
+
+  @include breakpoint(tablet) {
+    padding-top: 60px;
+    max-width: 445px;
+  }
+
+  @include breakpoint(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1110px;
+  }
+
+  &_container {
+    @include breakpoint(desktop) {
+      width: 445px;
+    }
+  }
+
+  &_title {
+    @include title(m);
+    text-align: center;
+
+    @include breakpoint(tablet) {
+      @include title(xl);
+    }
+
+    @include breakpoint(desktop) {
+      text-align: left;
+      @include title(xxl);
+    }
+  }
+
+  &_subtitle {
+    @include text(s);
+    color: $grey;
+    text-align: center;
+    margin-top: 20px;
+
+    @include breakpoint(tablet) {
+      @include text(m);
+    }
+
+    @include breakpoint(desktop) {
+      text-align: left;
+    }
+  }
+
+  &_form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 50px;
+
+    @include breakpoint(desktop) {
+      margin-top: 0;
+    }
+
+    &_icon {
+      display: none;
+      position: absolute;
+      right: 10px;
+      top: 29%;
+      color: $red;
+      display: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: -7.7px;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $red;
+        border-radius: 100%;
+
+        @include breakpoint(tablet) {
+          right: -8px;
+        }
+      }
+    }
+
+    &_error-message {
+      display: none;
+      color: $red;
+      position: absolute;
+      top: 38%;
+      right: 10px;
+      @include breakpoint(tablet) {
+        right: 5px;
+      }
+    }
+
+    &_input {
+      width: 100%;
+      height: 43px;
+      background-color: $dark-grey;
+      border: none;
+      border-bottom: 1px solid $white;
+      @include text(s);
+
+      &:focus {
+        border: none;
+        border-bottom: 1px solid $green;
+        outline: none;
+      }
+
+      &:invalid:focus {
+        border-color: $red;
+      }
+    }
+
+    &_box {
+      margin-left: auto;
+
+      &_button {
+        display: flex;
+        background-color: transparent;
+        border: none;
+      }
+    }
+
+    .text_area {
+      height: 107px;
+      background-color: transparent;
+    }
+  }
+}
+
+.email:invalid:focus ~ .contact_form_error-message,
+.email:invalid:focus ~ .contact_form_icon {
+  display: block;
+}

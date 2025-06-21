@@ -1,0 +1,37 @@
+@use "../abstracts/index" as *;
+
+.page {
+  background: url("../img/multiple-oval.svg"), url("../img/Oval.svg"),
+    url("../img/multiple-oval.svg");
+  background-repeat: no-repeat;
+  background-position: left -246px top 133px, right -57px top 244px,
+    right -344px top 1270px;
+  padding: 0px 16px;
+  padding-bottom: 90px;
+
+  @include breakpoint(tablet) {
+    padding: 0 32px;
+    background-position: left -266px top 58px, right -57px top 423px,
+      right -352px top 1034px;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 0 165px;
+  }
+}
+
+.contact_page {
+  padding: 60px 16px;
+  background: url("../img/multiple-oval.svg");
+  background-repeat: no-repeat;
+  background-position: left -358px bottom 156px;
+  background-color: $dark-grey;
+
+  @include breakpoint(tablet) {
+    background-position: left -371px bottom 33px;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 0 165px;
+  }
+}
