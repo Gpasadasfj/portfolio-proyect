@@ -65,6 +65,16 @@ p {
   color: #4ee1a0;
 }
 
+.proyects_item_button2 {
+  margin-left: 15px;
+}
+@media (min-width: 1440px) {
+  .proyects_item_button2::before {
+    width: 79%;
+    left: 2px;
+  }
+}
+
 .skills {
   padding: 40px;
   border-top: 1px solid #ffffff;

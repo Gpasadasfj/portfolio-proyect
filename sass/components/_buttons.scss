@@ -24,3 +24,13 @@
     color: $green;
   }
 }
+
+.proyects_item_button2 {
+  margin-left: 15px;
+  @include breakpoint(desktop) {
+    &::before {
+      width: 79%;
+      left: 2px;
+    }
+  }
+}
